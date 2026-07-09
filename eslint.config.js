@@ -71,6 +71,7 @@ export default [
         {
           default: "disallow",
           rules: [
+            { from: "shared", allow: ["shared"] },
             { from: "features", allow: ["shared", "entities"] },
             { from: "entities", allow: ["shared"] },
             { from: "widgets", allow: ["shared", "features", "entities"] },
