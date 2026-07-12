@@ -4,7 +4,7 @@ import styles from "./TaskList.module.css";
 
 type TaskListProps = {
   tasks: Task[];
-  removeTask: (id: string) => void;
+  removeTask: (id: number) => void;
 };
 export const TaskList: FC<TaskListProps> = ({ tasks, removeTask }) => {
   return (

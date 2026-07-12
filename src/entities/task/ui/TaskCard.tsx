@@ -4,7 +4,7 @@ import styles from "./TaskCard.module.css";
 
 type TaskCardProps = {
   task: Task;
-  removeTask: (id: string) => void;
+  removeTask: (id: number) => void;
 };
 export const TaskCard: FC<TaskCardProps> = React.memo(
   ({ task, removeTask }) => {
