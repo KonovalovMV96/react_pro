@@ -8,9 +8,7 @@ export const TasksWidget = () => {
     <div>
       <FilterButton onFilterChange={setFilter} />
       {isLoading && <p>Загрузка задач...</p>}
-      {tasks.length > 0 && (
-        <TaskList tasks={tasks} removeTask={removeTask} />
-      )}
+      {tasks.length > 0 && <TaskList tasks={tasks} removeTask={removeTask} />}
     </div>
   );
 };
