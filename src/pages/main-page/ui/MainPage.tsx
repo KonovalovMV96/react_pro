@@ -3,10 +3,12 @@ import { useState } from "react";
 import { Tabs } from "shared/ui/tabs";
 import styles from "./MainPage.module.css";
 import { FormsPage } from "pages/forms";
+import { RefsPage } from "pages/refs";
 
 const TABS_LESSONS = [
   { id: "lessons1-3", label: "Lessons 1-3" },
   { id: "lessons4", label: "Lessons 4" },
+  { id: "lessons5", label: "Lessons 5" },
 ];
 
 export const MainPage = () => {
@@ -20,6 +22,8 @@ export const MainPage = () => {
         return <TaskPage />;
       case "lessons4":
         return <FormsPage />;
+      case "lessons5":
+        return <RefsPage />;
       default:
         return null;
     }
