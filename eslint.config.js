@@ -77,7 +77,7 @@ export default [
             { from: "widgets", allow: ["shared", "features", "entities"] },
             {
               from: "pages",
-              allow: ["widgets", "features", "entities", "shared"],
+              allow: ["pages", "widgets", "features", "entities", "shared"],
             },
           ],
         },
